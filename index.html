@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#120b15">
+<title>For Mam ❤️</title>
+<style>
+:root{--bg:#100912;--rose:#ff7fa8;--soft:#ffd7e5;--gold:#ffd79a;--white:#fff9fb;--muted:#e9cbd6;--glass:rgba(255,255,255,.08);--line:rgba(255,255,255,.16)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--white);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}body{min-height:100vh}.app{min-height:100vh;position:relative}.scene{min-height:100svh;width:100%;display:none;position:relative;overflow:hidden;padding:28px 18px 90px}.scene.active{display:flex;align-items:center;justify-content:center;animation:sceneIn 1.1s ease both}.scene::before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 20% 20%,rgba(255,127,168,.16),transparent 25%),radial-gradient(circle at 80% 70%,rgba(255,215,154,.10),transparent 28%),radial-gradient(circle at 55% 40%,rgba(174,104,255,.08),transparent 32%);pointer-events:none}.grain{position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}.vignette{position:fixed;inset:0;z-index:49;pointer-events:none;background:radial-gradient(circle,transparent 45%,rgba(0,0,0,.48) 120%)}
+@keyframes sceneIn{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:scale(1)}}@keyframes float{50%{transform:translateY(-18px) rotate(4deg)}}@keyframes pulse{50%{transform:scale(1.12)}}@keyframes glow{50%{box-shadow:0 0 45px rgba(255,127,168,.65)}}@keyframes rise{from{transform:translateY(25px);opacity:0}to{transform:translateY(0);opacity:1}}@keyframes shimmer{0%{background-position:-300% 0}100%{background-position:300% 0}}@keyframes blink{50%{border-color:transparent}}@keyframes pop{0%{transform:scale(.3);opacity:0}70%{transform:scale(1.12);opacity:1}100%{transform:scale(1)}}
+.aurora{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 30% 20%,rgba(255,98,148,.14),transparent 40%),radial-gradient(ellipse at 75% 75%,rgba(255,209,130,.12),transparent 38%);filter:blur(8px)}
+.card{position:relative;z-index:2;width:min(680px,94vw);padding:34px 22px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.035));backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:28px;box-shadow:0 28px 90px rgba(0,0,0,.45)}.eyebrow{letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;color:var(--gold);margin-bottom:12px}.title{font-size:clamp(2rem,8vw,4.6rem);line-height:1.04;margin:0 0 16px;font-weight:500}.subtitle{font-size:clamp(1rem,4.3vw,1.3rem);line-height:1.7;color:var(--muted);margin:0 auto;max-width:570px}.center{text-align:center}.heart{color:#ff789f;text-shadow:0 0 20px rgba(255,120,159,.55)}
+.login{background:linear-gradient(135deg,#100812,#24101e 48%,#120b16)}.login-card{max-width:520px;text-align:center}.login-heart{font-size:4rem;display:block;animation:pulse 1.8s infinite}.login h1{font-size:clamp(2rem,9vw,3.8rem);margin:10px 0}.field{margin:14px 0;text-align:left}.field label{font-size:.78rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;display:block;margin:0 0 7px}.field input{width:100%;padding:15px 16px;border:1px solid rgba(255,255,255,.18);border-radius:15px;background:rgba(0,0,0,.24);color:#fff;font:inherit;font-size:1rem;outline:none;transition:.25s}.field input:focus{border-color:var(--rose);box-shadow:0 0 0 4px rgba(255,127,168,.1)}.btn{border:0;border-radius:999px;padding:14px 22px;font:inherit;font-weight:bold;color:#2b101d;background:linear-gradient(90deg,#ffd2df,#ff9fbc,#ffd99d);background-size:200% 100%;animation:shimmer 5s linear infinite;cursor:pointer;box-shadow:0 12px 35px rgba(255,127,168,.25);margin-top:10px}.error{min-height:24px;color:#ffb5c9;margin-top:10px}.tiny{font-size:.78rem;color:#c8aeba;margin-top:16px}
+.type-line{min-height:2.2em;display:inline-block;border-right:2px solid var(--soft);animation:blink .7s step-end infinite;white-space:normal}.love-big{font-size:clamp(2.1rem,9vw,4.5rem);line-height:1.1;margin:8px 0;color:#fff}.love-small{font-size:clamp(1.15rem,5vw,1.8rem);color:#ffd7e5}.signature{margin-top:25px;color:var(--gold);letter-spacing:.12em;font-size:.78rem;text-transform:uppercase}
+.photo-wrap{position:relative;width:min(390px,82vw);aspect-ratio:3/4;margin:20px auto;border-radius:26px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 55px rgba(255,127,168,.18);border:1px solid rgba(255,255,255,.2);transform:rotate(-1.2deg)}.photo-wrap img{width:100%;height:100%;object-fit:cover;display:block;animation:photoZoom 14s ease-in-out infinite alternate}@keyframes photoZoom{from{transform:scale(1)}to{transform:scale(1.07)}}.photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.08),transparent 25%,transparent 70%,rgba(0,0,0,.28));pointer-events:none}.caption{font-size:clamp(1rem,4.2vw,1.35rem);line-height:1.7;color:#f8dce5;max-width:620px;margin:0 auto}.gold{color:var(--gold)}
+.calendar-card{width:min(720px,96vw);padding:22px 12px 28px}.month{font-size:clamp(2rem,8vw,3.2rem);margin:0}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:20px}.dow,.day{aspect-ratio:1/1;display:grid;place-items:center;border-radius:14px}.dow{font-size:.65rem;color:#dcb9c5;letter-spacing:.06em}.day{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.07);font-size:clamp(.8rem,3.3vw,1rem);position:relative}.day.special{background:linear-gradient(145deg,rgba(255,110,157,.38),rgba(255,215,154,.16));border-color:rgba(255,150,180,.55);box-shadow:0 0 28px rgba(255,110,157,.25);font-weight:bold}.day.special::after{content:'♥';position:absolute;right:5px;top:3px;color:#ff87a8;font-size:.8rem;animation:pulse 1.2s infinite}.calendar-note{margin:18px 0 0;color:#f3dce4;font-size:clamp(1rem,4vw,1.25rem);line-height:1.6}.heart-burst{font-size:3.4rem;margin-top:8px;opacity:0;transform:scale(.3)}.scene.active .heart-burst{animation:pop 1s 1.3s forwards}
+.wish-card{text-align:center}.wish-card .title{margin-bottom:5px}.wish-text{font-size:clamp(1.05rem,4.5vw,1.35rem);line-height:1.9;color:#f5dfe7;margin:18px auto;max-width:600px}.wish-quote{font-size:clamp(1.4rem,5.8vw,2.1rem);line-height:1.45;color:#fff;margin:20px auto}.wish-photo{width:min(300px,70vw);aspect-ratio:3/4;margin:20px auto}.wish-photo img{object-position:center}
+.memory{padding-top:50px}.memory-card{width:min(920px,96vw);text-align:center}.memory-stage{position:relative;display:grid;grid-template-columns:1fr;gap:20px;align-items:center}.memory-photo{width:min(430px,82vw);aspect-ratio:3/4;margin:0 auto;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 25px 80px rgba(0,0,0,.55);background:#1a0d16}.memory-photo img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transform:scale(1.06);transition:opacity 1.35s ease,transform 1.8s ease}.memory-photo img.show{opacity:1;transform:scale(1)}.memory-caption{font-size:clamp(1.1rem,4.5vw,1.5rem);line-height:1.7;color:#f7dce6;min-height:5.2em}.memory-tag{color:var(--gold);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}.memory-note{margin-top:18px;color:#d7b8c5;font-size:.9rem}.memory-next{margin-top:16px}.memory-progress{display:flex;justify-content:center;gap:7px;margin:10px 0 4px}.memory-progress span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.2);transition:.4s}.memory-progress span.active{background:#ff87aa;box-shadow:0 0 12px rgba(255,127,168,.65);transform:scale(1.35)}
+.mini-video{width:min(650px,92vw);min-height:330px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}.love-video{width:min(390px,82vw);max-height:62svh;aspect-ratio:9/16;object-fit:cover;border-radius:24px;border:1px solid rgba(255,255,255,.16);box-shadow:0 25px 80px rgba(0,0,0,.55),0 0 45px rgba(255,127,168,.16);display:block}.mini-stage{width:100%;height:100%;min-height:330px;display:grid;place-items:center;position:relative}.mini-message{position:absolute;inset:auto 15px 22px;text-align:center;font-size:clamp(1rem,4.2vw,1.3rem);color:#f6dce5;opacity:0;animation:miniText 4.5s ease both}.mini-emoji{font-size:clamp(5rem,22vw,9rem);filter:drop-shadow(0 0 20px rgba(255,127,168,.35));animation:miniEmoji 4.5s ease both}.mini-hearts{position:absolute;inset:0;pointer-events:none}.mini-hearts span{position:absolute;font-size:1.6rem;opacity:0;animation:riseHeart 4.5s ease-in-out infinite}.mini-hearts span:nth-child(1){left:18%;bottom:16%;animation-delay:.2s}.mini-hearts span:nth-child(2){left:72%;bottom:12%;animation-delay:1s}.mini-hearts span:nth-child(3){left:45%;bottom:5%;animation-delay:1.8s}.mini-hearts span:nth-child(4){left:84%;bottom:25%;animation-delay:2.5s}.mini-hearts span:nth-child(5){left:8%;bottom:30%;animation-delay:3.1s}@keyframes miniEmoji{0%{transform:scale(.25) rotate(-12deg);opacity:0}18%{transform:scale(1.08) rotate(5deg);opacity:1}35%{transform:scale(1) rotate(0);opacity:1}72%{transform:scale(1.05) rotate(-4deg);opacity:1}100%{transform:scale(.7) rotate(10deg);opacity:0}}@keyframes miniText{0%,15%{opacity:0;transform:translateY(15px)}28%,78%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-10px)}}@keyframes riseHeart{0%{transform:translateY(25px) scale(.5);opacity:0}20%{opacity:1}80%{opacity:.9}100%{transform:translateY(-250px) scale(1.15) rotate(20deg);opacity:0}}
+.fun-card{text-align:center;max-width:700px}.bubble{display:inline-block;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:18px 20px;margin:7px;box-shadow:0 15px 40px rgba(0,0,0,.25);animation:float 4s ease-in-out infinite}.bubble:nth-child(2){animation-delay:.5s}.bubble:nth-child(3){animation-delay:1s}.fun-heart{font-size:5rem;animation:pulse 1.6s infinite}.envelope{width:210px;height:145px;margin:15px auto;position:relative;background:#f4b8c9;border-radius:10px;box-shadow:0 25px 60px rgba(0,0,0,.4);overflow:hidden}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 49%,#d98fa7 50%,transparent 51%),linear-gradient(45deg,transparent 49%,#d98fa7 50%,transparent 51%)}.letter{position:absolute;left:18px;right:18px;bottom:10px;height:110px;background:#fff9fb;color:#6c3448;border-radius:8px;padding:15px;font-size:.9rem;line-height:1.5;transform:translateY(30px);transition:.8s}.envelope.open .letter{transform:translateY(-52px)}
+.cake-card{text-align:center}.cake{position:relative;width:230px;height:180px;margin:28px auto 18px}.cake-base{position:absolute;left:20px;right:20px;bottom:10px;height:90px;border-radius:18px 18px 12px 12px;background:linear-gradient(#f6c0d0,#d982a1);box-shadow:0 25px 45px rgba(0,0,0,.4)}.icing{position:absolute;left:20px;right:20px;top:70px;height:32px;background:#fff0f4;border-radius:18px 18px 12px 12px}.candle{position:absolute;width:12px;height:58px;background:#ffd79a;left:109px;top:17px;border-radius:7px}.flame{position:absolute;width:22px;height:32px;left:104px;top:-10px;background:#ffd66e;border-radius:50% 50% 50% 0;transform:rotate(-45deg);filter:drop-shadow(0 0 12px #ffd66e);animation:pulse .8s infinite}.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}.confetti i{position:absolute;width:7px;height:14px;background:var(--soft);top:-20px;animation:fall 4s linear infinite}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.2}}
+
+.heart-collage-card{max-width:850px;text-align:center}.photo-heart{position:relative;width:min(520px,88vw);height:min(460px,78vw);min-height:300px;margin:18px auto 20px;isolation:isolate;filter:drop-shadow(0 20px 35px rgba(255,90,145,.2))}.photo-heart .heart-tile{position:absolute;width:23%;height:27%;object-fit:cover;border:2px solid rgba(255,235,243,.82);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.3);animation:tileFloat 6s ease-in-out infinite alternate}.photo-heart .heart-center{position:absolute;width:34%;height:43%;left:33%;top:28%;object-fit:cover;object-position:center;border:3px solid #ffe0eb;border-radius:48% 48% 18px 18px;box-shadow:0 0 35px rgba(255,127,168,.42);z-index:3;animation:photoZoom 10s ease-in-out infinite alternate}.photo-heart .heart-tile:nth-child(1){left:17%;top:5%;transform:rotate(-12deg)}.photo-heart .heart-tile:nth-child(2){left:40%;top:1%;transform:rotate(8deg)}.photo-heart .heart-tile:nth-child(3){left:62%;top:8%;transform:rotate(12deg)}.photo-heart .heart-tile:nth-child(4){left:5%;top:29%;transform:rotate(-10deg)}.photo-heart .heart-tile:nth-child(5){right:4%;top:31%;transform:rotate(10deg)}.photo-heart .heart-tile:nth-child(6){left:13%;top:55%;transform:rotate(8deg)}.photo-heart .heart-tile:nth-child(7){right:13%;top:57%;transform:rotate(-8deg)}.photo-heart .heart-tile:nth-child(8){left:27%;bottom:1%;transform:rotate(-7deg)}.photo-heart .heart-tile:nth-child(9){right:27%;bottom:0;transform:rotate(7deg)}@keyframes tileFloat{from{translate:0 0;filter:saturate(.94)}to{translate:0 -5px;filter:saturate(1.08)}}
+
+.final-card{text-align:center;max-width:760px}.final-heart{font-size:5rem;animation:pulse 1.5s infinite}.final-line{font-size:clamp(1.1rem,4.5vw,1.45rem);color:#e8cbd5;line-height:1.7}.final-title{font-size:clamp(2.3rem,10vw,5rem);line-height:1.05;margin:10px 0;background:linear-gradient(90deg,#fff,#ffd1df,#ffd79a,#fff);background-size:250% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 6s linear infinite}.final-small{margin-top:22px;color:#d8b6c4;line-height:1.8}
+.nav{position:fixed;z-index:60;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;padding:8px;border-radius:999px;background:rgba(14,7,15,.68);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(14px)}.nav button{border:0;background:transparent;color:#f8dce5;padding:9px 12px;border-radius:999px;cursor:pointer;font:inherit}.nav button:hover,.nav button.active{background:rgba(255,127,168,.16)}.next{position:fixed;bottom:78px;left:50%;transform:translateX(-50%);z-index:65;max-width:92vw;white-space:normal;box-shadow:0 8px 28px rgba(0,0,0,.24);background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:10px 17px;cursor:pointer;font:inherit}.music-dock{position:fixed;left:12px;bottom:14px;transform:none;z-index:70;min-width:160px;max-width:46vw;text-align:center;background:rgba(10,5,11,.72);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 14px;backdrop-filter:blur(12px);display:none;box-shadow:0 12px 35px rgba(0,0,0,.28)}.music-dock.show{display:block}.music-label{font-size:.68rem;color:#ffd7e5;text-align:left;line-height:1.3}.player{position:absolute;left:-9999px;top:auto;width:1px;height:1px;border:0;opacity:0}.music-fallback{font-size:.66rem;text-align:left;color:#ffd0df;padding:3px}.music-fallback button{border:0;background:transparent;color:#ffd79a;text-decoration:underline;cursor:pointer;font:inherit}.music-note{font-size:.66rem;color:#d9b8c5;margin-top:2px}
+@media(max-width:500px){.music-dock{left:8px;bottom:8px;min-width:0;width:42vw;padding:7px 9px}.music-label{font-size:.61rem}.music-fallback{font-size:.6rem}.next{bottom:78px;padding:11px 16px}.nav{bottom:8px;left:auto;right:8px;transform:none;gap:2px;padding:5px}.nav button{padding:8px 9px;font-size:.78rem}}
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}.particles span{position:absolute;width:4px;height:4px;background:#fff;border-radius:50%;opacity:.5;animation:float 5s ease-in-out infinite}.petals{position:absolute;inset:0;pointer-events:none;overflow:hidden}.petals span{position:absolute;top:-30px;font-size:20px;animation:petalFall 8s linear infinite;opacity:.55}@keyframes petalFall{to{transform:translateY(115vh) rotate(360deg)}}
+@media(min-width:720px){.scene{padding:40px 28px 90px}.memory-stage{grid-template-columns:1fr 1fr}.memory-photo{width:min(430px,42vw)}.memory-grid{grid-template-columns:repeat(5,1fr)}}
+@media(max-width:500px){.calendar{gap:4px}.day,.dow{border-radius:10px}.card{padding:28px 17px}.nav button{padding:8px 9px;font-size:.78rem}.next{bottom:68px}.music-dock{min-width:190px}.memory-caption{min-height:6.2em}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+/* New interactive love scenes */
+.typing-block{white-space:pre-wrap;display:inline;border-right:2px solid rgba(255,215,229,.9);animation:blink .7s step-end infinite}
+.typing-block.done{border-right:0;animation:none}
+.calendar-note .typed-calendar{white-space:pre-wrap}
+.mosaic-card{text-align:center;max-width:760px}
+.heart-mosaic{width:min(360px,84vw);height:min(330px,78vw);margin:8px auto 12px;position:relative;cursor:pointer;touch-action:manipulation;filter:drop-shadow(0 0 25px rgba(255,90,145,.18));}
+.heart-mosaic .mini-heart{position:absolute;font-size:clamp(14px,4.6vw,25px);line-height:1;transform:translate(-50%,-50%);opacity:.82;transition:transform .25s,opacity .25s;text-shadow:0 0 12px rgba(255,100,150,.45)}
+.heart-mosaic:hover .mini-heart{opacity:1}
+.heart-mosaic.touched .mini-heart{animation:heartSpark .8s ease both;animation-delay:calc(var(--i)*18ms)}
+@keyframes heartSpark{0%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.55) rotate(10deg);opacity:1}100%{transform:translate(-50%,-50%) scale(1);opacity:.95}}
+.mosaic-result{min-height:100px;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transform:translateY(12px) scale(.96);transition:.8s}
+.mosaic-result.show{opacity:1;transform:none}
+.mosaic-result .birthday-jan{font-size:clamp(2rem,8vw,4.2rem);color:#fff;text-shadow:0 0 25px rgba(255,120,160,.6);margin:0}
+.letter-scene-card{max-width:760px;text-align:center}
+.big-envelope{width:min(330px,82vw);height:210px;margin:18px auto 10px;position:relative;background:linear-gradient(145deg,#ffc8d8,#e89ab5);border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.45);cursor:pointer;touch-action:manipulation;overflow:visible}
+.big-envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49.5%,rgba(170,75,105,.3) 50%,transparent 50.5%),linear-gradient(35deg,transparent 49.5%,rgba(170,75,105,.22) 50%,transparent 50.5%);border-radius:14px}
+.big-envelope:after{content:"💌";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:3rem;filter:drop-shadow(0 5px 12px rgba(0,0,0,.2));transition:.5s}
+.big-envelope.open:after{opacity:0;transform:translate(-50%,-65%) scale(.7)}
+.letter-sheet{position:absolute;left:6%;right:6%;bottom:6px;height:188px;background:#fffafc;color:#6e344a;border-radius:10px;padding:18px 16px;text-align:left;box-shadow:0 12px 25px rgba(0,0,0,.22);transform:translateY(65px);transition:transform 1s cubic-bezier(.2,.8,.2,1);z-index:2;overflow:auto;font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+.big-envelope.open .letter-sheet{transform:translateY(-92px)}
+.letter-hint{color:#e7c4d0;font-size:.9rem;margin-top:14px}
+.letter-typed{white-space:pre-wrap}
+.letter-sign{margin-top:12px;color:#b06a82;font-weight:bold;text-align:right}
+.fun-after-letter{margin-top:20px}
+.final-typed{white-space:pre-wrap;display:inline-block}
+.music-dock{pointer-events:none}
+.music-dock .music-label,.music-dock .music-note{display:none}
+.music-fallback{pointer-events:auto;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:100;background:rgba(20,8,16,.92);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:16px 20px;font-size:.9rem;box-shadow:0 20px 70px rgba(0,0,0,.5)}
+.music-fallback button{margin-left:8px;border:0;border-radius:999px;padding:8px 14px;background:#ffd0df;color:#3a1723;font-weight:bold}
+@media(max-width:500px){.big-envelope.open .letter-sheet{transform:translateY(-84px)}.letter-sheet{height:180px}.heart-mosaic{height:300px}}
+
+
+.emoji-video{width:min(650px,92vw);height:160px;position:relative;display:grid;place-items:center;overflow:hidden;margin-top:10px}
+.emoji-scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;transform:scale(.85) translateY(10px);pointer-events:none}
+.emoji-scene.active{animation:emojiScene 5s ease both}
+.emoji-big{font-size:clamp(3.8rem,16vw,6rem);filter:drop-shadow(0 0 18px rgba(255,120,160,.4));animation:emojiFloat 5s ease-in-out both}
+.emoji-line{font-size:clamp(.95rem,4vw,1.2rem);color:#f7dce6;text-align:center;max-width:600px;opacity:0;animation:emojiLine 5s ease both .4s}
+@keyframes emojiScene{0%{opacity:0;transform:scale(.75) translateY(20px)}18%{opacity:1;transform:scale(1) translateY(0)}78%{opacity:1;transform:scale(1.02) translateY(-3px)}100%{opacity:0;transform:scale(1.1) translateY(-15px)}}
+@keyframes emojiFloat{0%,100%{transform:translateY(10px) rotate(-4deg)}45%{transform:translateY(-12px) rotate(4deg)}80%{transform:translateY(-4px) rotate(0)}}
+@keyframes emojiLine{0%,18%{opacity:0;transform:translateY(10px)}30%,78%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-8px)}}
+
+
+/* v5 readability + cinematic timing */
+.hey-note{max-width:640px;margin:10px auto 20px;padding:22px 20px;border-radius:22px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);box-shadow:0 16px 45px rgba(0,0,0,.25);font-size:clamp(1.15rem,4.8vw,1.55rem);line-height:1.75;color:#fff7fa;text-align:center}
+.hey-note .typing-block{min-height:1.7em;display:block}
+.big-envelope{width:min(330px,78vw);height:215px;margin:22px auto;position:relative;background:linear-gradient(145deg,#f7bfd0,#e89bb4);border-radius:16px;box-shadow:0 28px 75px rgba(0,0,0,.45),0 0 30px rgba(255,127,168,.15);overflow:visible;cursor:pointer}
+.big-envelope:before{content:"";position:absolute;inset:0;border-radius:16px;background:linear-gradient(145deg,transparent 49%,rgba(167,83,111,.35) 50%,transparent 51%),linear-gradient(35deg,transparent 49%,rgba(167,83,111,.28) 50%,transparent 51%);z-index:4;pointer-events:none}
+.big-envelope:after{content:"💌";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:3.2rem;z-index:5;filter:drop-shadow(0 5px 10px rgba(0,0,0,.18));transition:.5s}
+.big-envelope.open:after{opacity:0;transform:translate(-50%,-70%) scale(.7)}
+.letter-sheet{position:absolute;left:5%;right:5%;bottom:8px;height:260px;background:#fffafc;color:#6e344a;border-radius:12px;padding:22px 20px;text-align:left;box-shadow:0 15px 30px rgba(0,0,0,.22);transform:translateY(110px);transition:transform 1s cubic-bezier(.2,.8,.2,1);z-index:6;overflow:auto;font-family:Georgia,'Times New Roman',serif;line-height:1.75;font-size:clamp(.95rem,3.8vw,1.08rem)}
+.big-envelope.open .letter-sheet{transform:translateY(-150px)}
+.letter-sign{margin-top:16px;color:#b06a82;font-weight:bold;text-align:right}
+.letter-hint{font-size:clamp(.9rem,3.8vw,1.05rem);line-height:1.6}
+.fun-card{padding-bottom:50px}
+.fun-card .envelope{margin-top:22px}
+.fun-card .letter{font-size:1rem;line-height:1.65;height:135px;padding:18px}
+.memory-next[disabled],.next[disabled]{opacity:.45;cursor:not-allowed;filter:grayscale(.2);transform:none;animation:none;pointer-events:none}
+@media(max-width:500px){.big-envelope{height:190px}.letter-sheet{height:245px}.big-envelope.open .letter-sheet{transform:translateY(-142px)}.hey-note{padding:18px 15px}}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="grain"></div><div class="vignette"></div>
+<section class="scene login active" id="login">
+  <div class="aurora"></div><div class="particles" id="loginParticles"></div>
+  <div class="card login-card">
+    <span class="login-heart">❤️</span><div class="eyebrow">A tiny secret before the surprise</div>
+    <h1>Kake tumi valobaso?</h1><p class="subtitle">Maybe you already know the answer… but let's unlock it together. ✨</p>
+    <form id="unlockForm">
+      <div class="field"><label for="name">Your name / User ID</label><input id="name" autocomplete="off" placeholder="Enter your User ID" required></div>
+      <div class="field"><label for="pin">Password</label><input id="pin" type="password" inputmode="numeric" placeholder="Enter the secret password" required></div>
+      <button class="btn" type="submit">Unlock My Surprise ❤️</button>
+      <div class="error" id="loginError"></div>
+    </form>
+    <div class="tiny">Only someone special knows the way in. 🌙</div>
+  </div>
+</section>
+
+<section class="scene" id="loveIntro">
+  <div class="aurora"></div><div class="petals"><span style="left:8%;animation-delay:0s">♡</span><span style="left:28%;animation-delay:2s">♥</span><span style="left:52%;animation-delay:4s">♡</span><span style="left:75%;animation-delay:1s">♥</span><span style="left:90%;animation-delay:3s">♡</span></div>
+  <div class="card center">
+    <div class="eyebrow">From my heart</div>
+    <div class="title"><span id="type1" class="type-line"></span></div>
+    <div class="love-big"><span id="type2" class="type-line"></span></div>
+    <div class="love-small"><span id="type3" class="type-line"></span></div>
+    <div class="signature">written slowly… because some feelings deserve time. ❤️</div>
+  </div><button class="next" data-next="calendar">Continue →</button>
+</section>
+
+<section class="scene" id="calendar">
+  <div class="aurora"></div><div class="card calendar-card center"><div class="eyebrow">The date that became special</div><h2 class="month">October</h2><p class="subtitle">Every day has a number. But one day has a little more meaning. ❤️</p><div class="calendar" id="calendarGrid"></div><div class="heart-burst">❤️</div><p class="calendar-note"><span id="calendarTyped" class="typing-block"></span></p></div><button class="next" data-next="wish">Next →</button>
+</section>
+
+<section class="scene" id="wish">
+  <div class="aurora"></div><div class="card wish-card"><div class="eyebrow">Your birthday wish</div><h2 class="title">Happy Birthday Mam <span class="heart">❤️</span></h2><div class="photo-wrap wish-photo"><img src="photo1.jpg" alt="Mam"></div><p class="wish-quote"><span id="wishQuoteTyped" class="typing-block"></span></p><p class="wish-text"><span id="wishTextTyped" class="typing-block"></span></p></div><button class="next" data-next="message">There is more… →</button>
+</section>
+
+<section class="scene" id="message">
+ <div class="aurora"></div><div class="card center"><div class="eyebrow">A few words I wanted you to hear</div><p class="wish-text"><span id="message1" class="typing-block"></span></p><p class="wish-text"><span id="message2" class="typing-block"></span></p><p class="wish-text"><span id="message3" class="typing-block"></span></p></div><button class="next" data-next="memories">Our little memories →</button>
+</section>
+
+<section class="scene memory" id="memories">
+ <div class="aurora"></div><div class="card memory-card"><div class="eyebrow">Our little memories</div><h2 class="title">One picture. One feeling. ❤️</h2><div class="memory-stage"><div class="memory-photo"><img id="memoryMain" src="photo2.jpg" alt="Memory"></div><div><div class="memory-tag" id="memoryTag">memory 01 / 05</div><p class="memory-caption" id="memoryCaption"></p><div class="memory-progress" id="memoryProgress"></div><p class="memory-note">Don’t tap the photo… read the little message below. Then open the next memory. 💌</p><button class="btn memory-next" id="nextMemory">Open the next memory →</button></div></div></div>
+</section>
+
+<section class="scene" id="heartMosaic">
+ <div class="aurora"></div><div class="card mosaic-card">
+   <div class="eyebrow">Touch the little hearts</div>
+   <h2 class="title">A tiny surprise made of many little ❤️</h2>
+   <div class="heart-mosaic" id="heartMosaicGrid" aria-label="Tap the heart"></div>
+   <div class="mosaic-result" id="mosaicResult"><p class="birthday-jan" id="janTyped"></p><p class="subtitle">Because you deserve a little extra love today. 💝</p></div>
+   <p class="letter-hint">একবার touch করলেই ছোট ছোট ভালোবাসা মিলে একটা বড় surprise হবে। ❤️</p>
+ </div>
+ <button class="next" id="mosaicNext" data-next="letterScene" disabled>There is one more little secret →</button>
+</section>
+
+<section class="scene" id="letterScene">
+ <div class="aurora"></div><div class="card letter-scene-card">
+   <div class="eyebrow">A letter I wanted you to keep</div>
+   <h2 class="title">For you, Mam 💌</h2>
+   <div class="big-envelope" id="bigEnvelope" role="button" tabindex="0" aria-label="Open the letter">
+     <div class="letter-sheet"><div id="letterTyped" class="letter-typed"></div><div class="letter-sign">Your favourite<br>Sir ❤️</div></div>
+   </div>
+   <button class="btn" id="openBigLetter">Open the letter 💌</button>
+   <p class="letter-hint">খামটায় touch/click করলে চিঠিটা ধীরে ধীরে বের হবে।</p>
+ </div>
+ <button class="next" id="letterNext" data-next="miniMoments" disabled>A little animated moment →</button>
+</section>
+
+<section class="scene" id="miniMoments">
+ <div class="aurora"></div><div class="card center mini-video"><div class="eyebrow">Tiny romantic moments · 4–5 sec each</div><video id="loveVideo" class="love-video" src="love_moments.mp4" autoplay muted playsinline preload="auto"></video><div class="emoji-video" id="emojiVideo"><div class="emoji-scene active"><div class="emoji-big">🥰❤️</div><div class="emoji-line">একটু হাসি… একটু ভালোবাসা… আর তুমি। 💕</div></div><div class="emoji-scene"><div class="emoji-big">🫶✨</div><div class="emoji-line">তোমাকে কাছে রাখার ইচ্ছেটা সত্যিই অনেক বেশি। 🤗</div></div><div class="emoji-scene"><div class="emoji-big">💖🌸</div><div class="emoji-line">Some people make ordinary moments feel magical.</div></div></div><p class="music-note">Just watch these little moments… ❤️</p></div><button class="next" data-next="fun">A little fun first 😌 →</button>
+</section>
+
+<section class="scene" id="fun">
+ <div class="aurora"></div><div class="card fun-card"><div class="eyebrow">Cute little interruption</div><div class="fun-heart">🥰</div><div class="hey-note"><span id="heyMam1" class="typing-block"></span><span id="heyMam2" class="typing-block"></span></div><div class="bubble">You + Me = too much cuteness. ❤️</div><div class="bubble">Warning: your smile may cause my heart to malfunction. 😭💕</div><div class="bubble">Officially certified: <b>My Favourite Person™</b></div><div class="envelope" id="envelope"><div class="letter">Hey Mam,<br><br>Just in case you forgot… someone is smiling while making this for you. ❤️</div></div><button class="btn" id="openLetter">Open this tiny letter 💌</button></div><button class="next" data-next="cake">Birthday mode ON →</button>
+</section>
+
+<section class="scene" id="cake">
+ <div class="confetti" id="confetti"></div><div class="card cake-card"><div class="eyebrow">Make a wish, Mam…</div><h2 class="title">🎂 Happy Birthday 🎂</h2><div class="cake"><div class="flame"></div><div class="candle"></div><div class="icing"></div><div class="cake-base"></div></div><p class="wish-text">Close your eyes for a second…<br>make one beautiful wish. ✨</p><p class="gold">I hope life gives you more reasons to smile than you ever have to count.</p></div><button class="next" data-next="heart">One last little moment →</button>
+</section>
+
+<section class="scene" id="heart">
+ <div class="aurora"></div><div class="card center"><div class="eyebrow">If I could save a feeling</div><div class="final-heart">💗</div><p class="wish-text"><span id="heartMsg1" class="typing-block"></span></p><p class="wish-text"><span id="heartMsg2" class="typing-block"></span></p><p class="wish-quote"><span id="heartMsg3" class="typing-block"></span></p></div><button class="next" data-next="memoryHeart">One last memory surprise →</button>
+</section>
+
+
+<section class="scene" id="memoryHeart">
+ <div class="aurora"></div><div class="card center heart-collage-card"><div class="eyebrow">Every memory, one heart</div><h2 class="title">A little heart made of our memories ❤️</h2><div class="photo-heart" id="photoHeart" aria-label="Heart-shaped collage of memories"></div><p class="wish-text">প্রিয় মুহূর্তগুলো আলাদা আলাদা ছবি, কিন্তু সবগুলো মিলেই তৈরি হয় ভালোবাসার গল্প। ❤️</p><p class="caption">Every memory has a place in this little heart. And right in the middle is you, Mam. 💗</p></div><button class="next" data-next="final">Keep this little heart forever →</button>
+</section>
+
+<section class="scene" id="final">
+ <div class="aurora"></div><div class="card final-card"><div class="final-heart">❤️</div><div class="eyebrow">For Mam, with love</div><p class="final-line"><span id="final1" class="typing-block"></span></p><h2 class="final-title"><span id="final2" class="typing-block"></span></h2><p class="final-line"><span id="final3" class="typing-block"></span></p><p class="final-small"><span id="final4" class="typing-block"></span></p><button class="btn" id="replay">Replay from the beginning ↺</button></div>
+</section>
+
+<div class="music-dock" id="musicDock"><div class="music-label" id="musicLabel">🎵 Bol Do Na Zara · from 0:15</div><audio id="musicAudio" preload="auto"></audio><div class="music-fallback" id="musicFallback">Tap once to start the music 🎵 <button id="playMusic">Start</button></div></div>
+<nav class="nav" id="nav" aria-label="Scenes" style="display:none"><button data-go="loveIntro">♥</button><button data-go="calendar">13</button><button data-go="wish">Wish</button><button data-go="memories">Memories</button><button data-go="final">End</button></nav>
+</div>
+<script>
+/* =========================
+   EASY EDIT SETTINGS
+   Add future photos beside index.html and put their filename in MEMORY_PHOTOS.
+   Change text here without touching the page layout.
+========================= */
+const CONFIG={
+  VALID_NAMES:['tuktuk','uddav','babu','sir','uddav gupta'],
+  PASSWORD:'29/02/2024',
+  MUSIC_START:15,
+  MUSIC_FILE:'Bol_Do_Na_Zara.m4a',
+  BIRTHDAY_PHOTO:'photo1.jpg',
+  MEMORY_PHOTOS:['photo12.jpg','photo13.jpg','photo14.jpg','photo15.jpg','photo2.jpg','photo3.jpg','photo4.jpg','photo5.jpg','photo6.jpg','photo7.jpg','photo8.jpg','photo9.jpg','photo10.jpg','photo11.jpg'],
+  MUSIC_SECOND_FILE:'Oboseshe.m4a',
+  CALENDAR_YEAR:2026,
+  CALENDAR_MONTH:9,
+  CALENDAR_SPECIAL_DAY:13,
+  MEMORY_CAPTIONS:[
+    'Some moments don’t need a perfect picture… they just need the right person. ❤️',
+    'A little smile, a little chaos, and a memory worth keeping. ✨',
+    'If memories had a favourite colour, maybe it would look like this. 🌸',
+    'The simple moments somehow become the ones we remember most. ❤️',
+    'One picture, one moment, one more reason to smile. 🥰'
+  ]
+};
+
+const scenes=[...document.querySelectorAll('.scene')];let unlocked=false;
+function showScene(id){if(!unlocked)return;scenes.forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.go===id));if(id==='loveIntro')startTyping();if(id==='calendar')animateCalendar();if(id==='wish')startWishTyping();if(id==='message')startMessageTyping();if(id==='memories')renderMemories();if(id==='heartMosaic')resetMosaic();if(id==='letterScene')resetLetter();if(id==='miniMoments'){startMiniVideo();startEmojiVideo();}if(id==='fun'){startFunTyping();}if(id==='heart')startHeartTyping();if(id==='final')startFinalTyping();if(id==='cake')makeConfetti();if(id==='memoryHeart')buildPhotoHeart();}
+function next(id){showScene(id);window.scrollTo({top:0,behavior:'smooth'});}
+document.querySelectorAll('.next').forEach(b=>b.addEventListener('click',()=>next(b.dataset.next)));
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>next(b.dataset.go)));
+
+function typeText(el,text,delay=58,done){let i=0;el.textContent='';const t=setInterval(()=>{el.textContent=text.slice(0,i++);if(i>text.length){clearInterval(t);el.classList.remove('type-line');done&&done()}},delay)}
+let typed=false;function startTyping(){if(typed)return;typed=true;typeText(document.getElementById('type1'),'Hi Mam,',95,()=>typeText(document.getElementById('type2'),'I love you Mam ❤️',75,()=>typeText(document.getElementById('type3'),'khub khub beshi valobashi ❤️',70)));}
+
+function calendarHTML(){const grid=document.getElementById('calendarGrid');grid.innerHTML='';['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(d=>{const x=document.createElement('div');x.className='dow';x.textContent=d;grid.appendChild(x)});const first=new Date(CONFIG.CALENDAR_YEAR,CONFIG.CALENDAR_MONTH,1).getDay();const total=new Date(CONFIG.CALENDAR_YEAR,CONFIG.CALENDAR_MONTH+1,0).getDate();for(let i=0;i<first;i++){const x=document.createElement('div');x.className='day';x.style.visibility='hidden';grid.appendChild(x)}for(let d=1;d<=total;d++){const x=document.createElement('div');x.className='day';x.textContent=d;if(d===CONFIG.CALENDAR_SPECIAL_DAY)x.classList.add('special');grid.appendChild(x)}}
+let calDone=false;function animateCalendar(){calendarHTML();const days=[...document.querySelectorAll('#calendarGrid .day')];if(!calDone){calDone=true;days.forEach((d,i)=>{d.style.opacity='0';d.style.transform='scale(.6)';setTimeout(()=>{d.style.transition='.5s';d.style.opacity='1';d.style.transform='scale(1)'},i*45+250)});}typeOne('calendarTyped','13 — a little heart in the middle of a whole month. ❤️\n\nSome dates are just dates… some dates become memories.',40);}
+
+
+function typeOne(id,text,speed=38,done){const el=document.getElementById(id);if(!el)return;clearInterval(el._timer);el.textContent='';el.classList.remove('done');let i=0;el._timer=setInterval(()=>{el.textContent=text.slice(0,i++);if(i>text.length){clearInterval(el._timer);el.classList.add('done');done&&done()}},speed)}
+function typeMany(items,index=0){if(index>=items.length)return;typeOne(items[index][0],items[index][1],items[index][2]||32,()=>typeMany(items,index+1))}
+function startWishTyping(){typeMany([['wishQuoteTyped','“May your smile stay exactly where it belongs — on your face.” 🌸',45],['wishTextTyped','তোমার প্রতিটা দিন হোক একটু বেশি সুন্দর, একটু বেশি শান্ত, আর অনেক অনেক হাসিতে ভরা।\nYou deserve beautiful moments, today and always. 💝',32]]);}
+function startMessageTyping(){typeMany([['message1','Having you around makes the whole world feel a lot brighter and more meaningful. I just pray that your precious smile never fades away. Wishing you the absolute best in everything ahead of you! ❤️',25],['message2','I pray to God that you always stay happy, smiling, and well, and that you always stay by my side. ❤️',30],['message3','কিছু মানুষ জীবনে আসে গল্প হয়ে, আর কিছু মানুষ হয়ে যায় গল্পের সবচেয়ে সুন্দর অংশ। ❤️',35]]);}
+function startHeartTyping(){typeMany([['heartMsg1',"If I could save a few moments forever, I think I'd save the ones where you were simply being you.",30],['heartMsg2','তোমাকে সবসময় হাসতে দেখার ইচ্ছেটা হয়তো ছোট্ট একটা ইচ্ছা, কিন্তু আমার কাছে এটা অনেক বড় একটা ব্যাপার। ❤️',32],['heartMsg3','“Some moments don’t need words. They just need the right person.” ❤️',35]]);}
+function startFinalTyping(){typeMany([['final1','Your presence creates a beautiful moment for me.',45],['final2','Happy Birthday Mam. ❤️',55],['final3','Stay happy. Keep smiling. And keep being you. 🌸',45],['final4','With lots of love ❤️\n\n— Uddav',45]]);}
+function startFunTyping(){typeMany([['heyMam1','Hey Mam,',75],['heyMam2','Just in case you forgot… someone is smiling while making this for you. ❤️',45]]);}
+
+function buildHeartMosaic(){const box=document.getElementById('heartMosaicGrid');if(!box||box.children.length)return;const points=[];for(let y=-1.25;y<=1.25;y+=.17){for(let x=-1.25;x<=1.25;x+=.17){const v=Math.pow(x*x+y*y-1,3)-x*x*Math.pow(y,3);if(v<=0)points.push([x,y]);}}points.forEach((p,i)=>{const s=document.createElement('span');s.className='mini-heart';s.textContent=i%5===0?'💗':(i%3===0?'💕':'❤️');const left=(p[0]+1.25)/2.5*100;const top=(1.25-p[1])/2.5*100;s.style.left=left+'%';s.style.top=top+'%';s.style.setProperty('--i',i);box.appendChild(s)});}
+function resetMosaic(){buildHeartMosaic();const box=document.getElementById('heartMosaicGrid');const result=document.getElementById('mosaicResult');result.classList.remove('show');document.getElementById('janTyped').textContent='';box.classList.remove('touched');document.getElementById('mosaicNext').disabled=true;}
+function triggerMosaic(){const box=document.getElementById('heartMosaicGrid');box.classList.remove('touched');void box.offsetWidth;box.classList.add('touched');setTimeout(()=>{document.getElementById('mosaicResult').classList.add('show');typeOne('janTyped','Happy Birthday Jan ❤️',70);document.getElementById('mosaicNext').disabled=false;},450);}
+function openMosaic(){triggerMosaic();}
+
+const letterText='Hi Mam,\n\nতোমাকে অনেক বেশি মিস করি 🙃… আর মন চায়, তোমাকে সবসময় নিজের কাছে রাখতে। 🤗\n\nতোমার সঙ্গে কথা বলতে গিয়ে অনেক সময় ভালো-মন্দ সবকিছু নিয়েই অনেক বেশি কথা বলে ফেলি। হয়তো একটু বেশি বলি—কিন্তু তোমার জন্যই বলি। যেন তুমি বুঝতে পারো, নিজের যত্ন নাও, সবসময় সুস্থ থাকো আর ভালো থাকো। 💝\n\nআমার আরেকটা ছোট্ট ইচ্ছে আছে—তুমি যেন সবসময় তোমার প্রিয় মানুষগুলোকে নিয়ে হাসি-খুশি থাকো, তোমার মুখের এই সুন্দর হাসিটা যেন কখনো হারিয়ে না যায়… আর আমাকে যেন একটু বেশি ভালোবাসো। ❤️\n\nআজকের দিনটা আমার কাছে শুধু একটা জন্মদিন নয়; এই দিনটা আমার মনে সবসময়ই বিশেষ হয়ে থাকবে। ✨\n\nHappy Birthday Jan ❤️';
+function resetLetter(){const env=document.getElementById('bigEnvelope');env.classList.remove('open');document.getElementById('openBigLetter').textContent='Open the letter 💌';document.getElementById('letterTyped').textContent='';document.getElementById('letterNext').disabled=true;}
+function openBigLetter(){const env=document.getElementById('bigEnvelope');env.classList.toggle('open');const opened=env.classList.contains('open');document.getElementById('openBigLetter').textContent=opened?'Close the letter 💕':'Open the letter 💌';if(opened){typeOne('letterTyped',letterText,24,()=>{document.getElementById('letterNext').disabled=false;});}}
+
+function startEmojiVideo(){const scenes2=[...document.querySelectorAll('.emoji-scene')];scenes2.forEach((s,i)=>{s.classList.remove('active');setTimeout(()=>{s.classList.add('active')},i*5000)});}
+
+let memoryIndex=0;let memoryInitialized=false;const MEMORY_MESSAGES=[
+  ['Family is where love begins and beautiful memories grow. 🤍','পরিবারের সবাই একসঙ্গে থাকাতেই জীবনের সবচেয়ে বড় আনন্দ—এই একসঙ্গে থাকা, হাসি আর ভালোবাসাই আসল সম্পদ। ❤️'],
+  ['A family together is a little world filled with care, laughter, and belonging. 🌸','পরিবারের মানুষগুলো পাশে থাকলে সাধারণ মুহূর্তও উৎসব হয়ে ওঠে। একসঙ্গে থাকা আর একে অপরের খেয়াল রাখাতেই সুখ। 🏡❤️'],
+  ['The warmest memories are the ones shared with the people who feel like home. 💗','আপন মানুষদের সঙ্গে কাটানো সময়ই সবচেয়ে মূল্যবান। এই ছবির মতো আমাদের সবার জীবন ভালোবাসা আর হাসিতে ভরে থাকুক। 🥰'],
+  ['No matter how busy life gets, togetherness is the sweetest gift. ✨','পরিবার মানে শুধু একসঙ্গে থাকা নয়—একজনের সুখে সবার হাসি, একজনের কষ্টে সবার পাশে দাঁড়ানো। এটাই পরিবারের আসল সৌন্দর্য। 💝'],
+  ['Some moments don’t need a perfect picture… they just need the right person. ❤️','কিছু মুহূর্তের সৌন্দর্য ছবিতে নয়—সঠিক মানুষটার পাশে থাকাতেই। 🌸'],
+  ['A little smile, a little tradition, and a memory I never want to forget. 🥰','তোমার এই হাসিটা দেখলেই মনে হয়—স্মৃতিগুলো এমনই সুন্দর হয়ে থাকুক। ❤️'],
+  ['Maybe this is just a picture… but to me, it is a little piece of happiness. ✨','হয়তো এটা শুধু একটা ছবি, কিন্তু আমার কাছে এটা এক টুকরো খুব প্রিয় সময়। 💕'],
+  ['Some places become special simply because you were there. 🌷','কিছু জায়গা জায়গা থাকে না—তোমার উপস্থিতির কারণে সেগুলো স্মৃতি হয়ে যায়। ❤️'],
+  ['The best memories are often the simple ones we never planned. 💗','সবচেয়ে প্রিয় স্মৃতিগুলো অনেক সময় পরিকল্পনা করে আসে না—নিজে থেকেই তৈরি হয়ে যায়। 🌷'],
+  ['And somehow, every little moment with you feels worth keeping. 🫶','তোমার সঙ্গে কাটানো ছোট্ট সময়গুলোও কেন যেন মনের ভেতর অনেক বড় হয়ে থেকে যায়। 💝'],
+  ['A smile like this deserves to be remembered a thousand times. ✨','তোমার এই মিষ্টি হাসিটা হাজারবার মনে রাখলেও কম মনে হবে। 😊❤️'],
+  ['If memories had a favourite feeling, mine would be the feeling of being beside you. 🤍','স্মৃতির যদি কোনো প্রিয় অনুভূতি থাকে, আমারটা হবে—তোমার পাশে থাকার অনুভূতি। 🥹'],
+  ['Some pictures capture faces. This one captures a feeling. ❤️','কিছু ছবি শুধু মানুষকে ধরে রাখে, আর কিছু ছবি ধরে রাখে একটা অনুভূতি। 💕'],
+  ['And if I could keep one feeling from all these moments… I would keep this one. ❤️','এই সব মুহূর্তের মধ্যে যদি একটা অনুভূতি চিরদিন রেখে দিতে পারতাম—তাহলে তোমার পাশে থাকার অনুভূতিটাই রাখতাম। 🫶']
+];
+function renderMemories(){if(memoryInitialized)return;memoryInitialized=true;const progress=document.getElementById('memoryProgress');progress.innerHTML=CONFIG.MEMORY_PHOTOS.map((_,i)=>`<span class="${i===0?'active':''}"></span>`).join('');selectMemory(0,false)}
+function typeCaption(i){const el=document.getElementById('memoryCaption');const [en,bn]=MEMORY_MESSAGES[i]||[CONFIG.MEMORY_CAPTIONS[i%CONFIG.MEMORY_CAPTIONS.length]||'A little moment worth keeping. ❤️','এই মুহূর্তটুকু মনে রাখার মতো। ❤️'];el.textContent='';clearInterval(window.captionTimer);let text=en+'\n\n'+bn;let c=0;el.style.whiteSpace='pre-wrap';el.classList.remove('done');const btn=document.getElementById('nextMemory');btn.disabled=true;window.captionTimer=setInterval(()=>{el.textContent=text.slice(0,c++);if(c>text.length){clearInterval(window.captionTimer);el.classList.add('done');setTimeout(()=>btn.disabled=false,2600)}},42)}
+function selectMemory(i,animate=true){memoryIndex=i;const img=document.getElementById('memoryMain');img.classList.remove('show');setTimeout(()=>{img.src=CONFIG.MEMORY_PHOTOS[i];img.alt='Memory '+(i+1);requestAnimationFrame(()=>img.classList.add('show'));},animate?320:80);document.getElementById('memoryTag').textContent=`memory ${String(i+1).padStart(2,'0')} / ${String(CONFIG.MEMORY_PHOTOS.length).padStart(2,'0')}`;document.querySelectorAll('#memoryProgress span').forEach((x,j)=>x.classList.toggle('active',j===i));typeCaption(i);const btn=document.getElementById('nextMemory');btn.textContent=i===CONFIG.MEMORY_PHOTOS.length-1?'Continue to the heart surprise →':'Open the next memory →';}
+document.getElementById('nextMemory').addEventListener('click',()=>{if(memoryIndex<CONFIG.MEMORY_PHOTOS.length-1){selectMemory(memoryIndex+1,true)}else{next('heartMosaic')}});
+
+let miniVideoStarted=false;function startMiniVideo(){const v=document.getElementById('loveVideo');if(!v)return;miniVideoStarted=true;try{v.currentTime=0;v.play().catch(()=>{})}catch(e){}}
+
+
+document.getElementById('heartMosaicGrid').addEventListener('click',openMosaic);
+document.getElementById('openBigLetter').addEventListener('click',openBigLetter);
+document.getElementById('bigEnvelope').addEventListener('click',openBigLetter);
+document.getElementById('bigEnvelope').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openBigLetter()}});
+
+document.getElementById('openLetter').addEventListener('click',()=>{document.getElementById('envelope').classList.toggle('open');document.getElementById('openLetter').textContent=document.getElementById('envelope').classList.contains('open')?'Close the little letter 💕':'Open this tiny letter 💌'});
+function makeConfetti(){const c=document.getElementById('confetti');if(c.children.length)return;for(let i=0;i<50;i++){const s=document.createElement('i');s.style.left=Math.random()*100+'%';s.style.animationDelay=(Math.random()*3)+'s';s.style.animationDuration=(3+Math.random()*3)+'s';s.style.transform=`rotate(${Math.random()*360}deg)`;c.appendChild(s)}}
+function particles(){const p=document.getElementById('loginParticles');for(let i=0;i<45;i++){const s=document.createElement('span');s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=(Math.random()*4)+'s';s.style.animationDuration=(3+Math.random()*4)+'s';p.appendChild(s)}}particles();
+
+function buildPhotoHeart(){const box=document.getElementById('photoHeart');if(!box||box.children.length)return;const pics=['photo12.jpg','photo13.jpg','photo14.jpg','photo15.jpg','photo2.jpg','photo3.jpg','photo4.jpg','photo5.jpg','photo6.jpg'];pics.forEach((src,i)=>{const im=document.createElement('img');im.src=src;im.alt='Memory collage '+(i+1);im.className='heart-tile';im.loading='lazy';box.appendChild(im)});const center=document.createElement('img');center.src=CONFIG.BIRTHDAY_PHOTO;center.alt='Mam';center.className='heart-center';box.appendChild(center);}
+
+/* Local audio: first Bol Do Na Zara starts at 15s; Oboseshe follows when it ends. */
+const musicAudio=document.getElementById('musicAudio');musicAudio.src=CONFIG.MUSIC_FILE;let secondSongStarted=false;
+musicAudio.addEventListener('ended',()=>{if(secondSongStarted)return;secondSongStarted=true;musicAudio.src=CONFIG.MUSIC_SECOND_FILE;musicAudio.currentTime=0;document.getElementById('musicLabel').textContent='🎵 Oboseshe · from Kishmish';musicAudio.load();const p=musicAudio.play();if(p&&p.catch)p.catch(()=>{document.getElementById('musicFallback').style.display='block'});});
+function startLocalMusic(){
+  if(!musicAudio)return;
+  const begin=()=>{if(secondSongStarted){musicAudio.currentTime=0;}else{try{musicAudio.currentTime=CONFIG.MUSIC_START}catch(e){}};const p=musicAudio.play();if(p&&p.catch)p.catch(()=>{document.getElementById('musicFallback').style.display='block'});};
+  if(musicAudio.readyState>=1) begin(); else musicAudio.addEventListener('loadedmetadata',begin,{once:true});
+}
+function playMusicNow(){startLocalMusic();}
+document.getElementById('playMusic').addEventListener('click',()=>{document.getElementById('musicFallback').style.display='none';startLocalMusic()});
+
+function unlock(){const name=document.getElementById('name').value.trim().toLowerCase();const pin=document.getElementById('pin').value.trim();const err=document.getElementById('loginError');if(!CONFIG.VALID_NAMES.includes(name)||pin!==CONFIG.PASSWORD){err.textContent='Hmm… this little door didn’t recognize you. Try again, special one. ❤️';return}unlocked=true;document.getElementById('musicDock').classList.add('show');document.getElementById('nav').style.display='flex';startLocalMusic();next('loveIntro')}
+document.getElementById('unlockForm').addEventListener('submit',e=>{e.preventDefault();unlock()});
+document.getElementById('replay').addEventListener('click',()=>{document.getElementById('unlockForm').reset();unlocked=false;typed=false;calDone=false;memoryInitialized=false;memoryIndex=0;miniVideoStarted=false;document.getElementById('nav').style.display='none';document.getElementById('musicDock').style.display='';resetMosaic();resetLetter();document.getElementById('musicDock').classList.remove('show');scenes.forEach(s=>s.classList.toggle('active',s.id==='login'));window.scrollTo({top:0,behavior:'smooth'});if(musicAudio){try{musicAudio.pause();secondSongStarted=false;musicAudio.src=CONFIG.MUSIC_FILE;document.getElementById('musicLabel').textContent='🎵 Bol Do Na Zara · from 0:15';musicAudio.currentTime=CONFIG.MUSIC_START}catch(e){}}});
+</script>
+</body></html>
